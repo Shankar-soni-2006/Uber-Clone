@@ -454,11 +454,42 @@ footer{
   }
 
 }
-@media screen and (max-width:600px) {
-  .plan-left{
-    background-image: none;
+@media (max-width: 1000px) {
+  #Hero-section {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .plan-child-l{
-    width: 100%;
+
+  .plan-container {
+    flex-direction: column;
+  }
+
+  .ride {
+    flex-direction: column;
   }
 }
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #left-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+
